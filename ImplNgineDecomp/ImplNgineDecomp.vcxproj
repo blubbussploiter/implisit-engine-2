@@ -133,9 +133,11 @@
     <ClInclude Include="body.h" />
     <ClInclude Include="istage.h" />
     <ClInclude Include="kernel.h" />
+    <ClInclude Include="rbxmath.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.cpp" />
+    <ClCompile Include="cofm.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

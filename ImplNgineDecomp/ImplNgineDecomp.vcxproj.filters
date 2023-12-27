@@ -30,12 +30,18 @@
     <ClInclude Include="body.h">
       <Filter>Header Files\world</Filter>
     </ClInclude>
+    <ClInclude Include="rbxmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cofm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
