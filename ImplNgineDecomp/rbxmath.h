@@ -6,21 +6,21 @@ namespace RBX
 {
 	namespace Math
 	{
-		Matrix3 momentToWorldSpace(Matrix3 iBody, Matrix3 bodyRotation)
+		static Matrix3 momentToWorldSpace(Matrix3 iBody, Matrix3 bodyRotation)
 		{
 			Matrix3 v0, v1, result;
 			v0 = bodyRotation.transpose();
 			v1 = iBody * bodyRotation;
 			return v1 * v0;
 		}
-		Matrix3 momentToObjectSpace(Matrix3 iWorld, Matrix3 bodyRotation)
+		static Matrix3 momentToObjectSpace(Matrix3 iWorld, Matrix3 bodyRotation)
 		{
 			Matrix3 v0, v1;
 			v0 = bodyRotation.transpose();
 			v1 = v0 * iWorld;
 			return v1 * bodyRotation;
 		}
-		Matrix3 getIWorldAtPoint(Vector3 cofmPos, Vector3 worldPos, Matrix3 iWorldAtCofm, float mass)
+		static Matrix3 getIWorldAtPoint(Vector3 cofmPos, Vector3 worldPos, Matrix3 iWorldAtCofm, float mass)
 		{
 			double v5; // st7
 			double v6; // st6
